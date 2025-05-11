@@ -12,16 +12,11 @@ export default function Home() {
   return (
     <>
       <Main>
-        <ProjectHeader
+        {/* <ProjectHeader
           title="ETA-IK: Execution-Time-Aware Inverse Kinematics for Dual-Arm Systems"
           authors={
             <>
-            <a href="https://yucheng-tang.github.io" target="_blank" rel="noopener noreferrer">Yucheng Tang</a>, 
-            <a href="https://xi-hhhm.github.io/roboX.huang/" target="_blank" rel="noopener noreferrer">Xi Huang</a>,
-            Yongzhou Zhang, 
-            Tao Chen, 
-            <a href="https://scholar.google.com/citations?user=MrbPxXEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Ilshat Mamaev</a>, 
-            and <a href="https://scholar.google.se/citations?user=RqTDkH4AAAAJ&hl=de" target="_blank" rel="noopener noreferrer">Björn Hein</a>
+            <a href="https://yucheng-tang.github.io" target="_blank" rel="noopener noreferrer">Yucheng Tang</a>, <a href="https://xi-hhhm.github.io/roboX.huang/" target="_blank" rel="noopener noreferrer">Xi Huang</a>, Yongzhou Zhang, Tao Chen, <a href="https://scholar.google.com/citations?user=MrbPxXEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Ilshat Mamaev</a>, and <a href="https://scholar.google.se/citations?user=RqTDkH4AAAAJ&hl=de" target="_blank" rel="noopener noreferrer">Björn Hein</a>
           </>
           }
           affiliations={
@@ -31,6 +26,23 @@ export default function Home() {
               <a href="" target="_blank" rel="noopener noreferrer">Proximity Robotics and Automation GmbH</a>
             </>
           }
+          publishedAt="Under review for IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)"
+        /> */}
+        <ProjectHeader
+          title="ETA-IK: Execution-Time-Aware Inverse Kinematics for Dual-Arm Systems"
+          authors={[
+            { name: "Yucheng Tang", url: "https://yucheng-tang.github.io", affiliations: [1, 2, 3], equal: true },
+            { name: "Xi Huang", url: "https://xi-hhhm.github.io/roboX.huang/", affiliations: [1], equal: true },
+            { name: "Yongzhou Zhang", affiliations: [2] },
+            { name: "Tao Chen", affiliations: [2] },
+            { name: "Ilshat Mamaev", url: "https://scholar.google.com/citations?user=MrbPxXEAAAAJ&hl=en", affiliations: [2, 3] },
+            { name: "Björn Hein", url: "https://scholar.google.se/citations?user=RqTDkH4AAAAJ&hl=de", affiliations: [1, 2] }
+          ]}
+          affiliations={{
+            1: "Intelligent Process Automation and Robotics Lab, Karlsruhe Institute of Technology",
+            2: "Institute for Robotics and Autonomous Systems, Karlsruhe University of Applied Sciences",
+            3: "Proximity Robotics and Automation GmbH",
+          }}
           publishedAt="Under review for IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)"
         />
         <ProjectLinks
