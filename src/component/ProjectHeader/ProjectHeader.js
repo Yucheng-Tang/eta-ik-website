@@ -7,7 +7,7 @@ function ProjectHeader({ title, authors, affiliation, publishedAt }) {
       <NameHeader>
 	{title}
       </NameHeader>
-     {/* <Authors>
+     <Authors>
         {authors.map((author, idx) => (
           <span key={idx}>
             {author.url ? (
@@ -27,14 +27,7 @@ function ProjectHeader({ title, authors, affiliation, publishedAt }) {
         {Object.entries(affiliations).map(([num, name]) => (
           <div key={num}><sup>{num}</sup> {name}</div>
         ))}
-      </AffiliationList> */}
-      <Authors>
-	{ Authors }
-      </Authors>
-      <AffiliationList>
-	{ AffiliationList }
       </AffiliationList>
-
       <PublishedAt>
 	{ publishedAt }
       </PublishedAt>
