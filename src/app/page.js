@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Main>
-        {/* <ProjectHeader
+        <ProjectHeader
           title="ETA-IK: Execution-Time-Aware Inverse Kinematics for Dual-Arm Systems"
           authors={
             <>
@@ -27,8 +27,8 @@ export default function Home() {
             </>
           }
           publishedAt="Under review for IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)"
-        /> */}
-        <ProjectHeader
+        />
+        {/* <ProjectHeader
           title="ETA-IK: Execution-Time-Aware Inverse Kinematics for Dual-Arm Systems"
           authors={[
             { name: "Yucheng Tang", url: "https://yucheng-tang.github.io", affiliations: [1, 2, 3], equal: true },
@@ -44,7 +44,7 @@ export default function Home() {
             3: "Proximity Robotics and Automation GmbH",
           }}
           publishedAt="Under review for IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)"
-        />
+        /> */}
         <ProjectLinks
           links={
             [
