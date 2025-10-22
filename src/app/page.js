@@ -31,8 +31,8 @@ export default function Home() {
         <ProjectHeader
           title="ETA-IK: Execution-Time-Aware Inverse Kinematics for Dual-Arm Systems"
           authors={[
-            { name: "Yucheng Tang", url: "https://yucheng-tang.github.io", affiliations: [1, 2, 3], equal: true },
-            { name: "Xi Huang", url: "https://xi-hhhm.github.io/roboX.huang/", affiliations: [1], equal: true },
+            { name: "Yucheng Tang", url: "https://yucheng-tang.github.io", affiliations: [1, 2, 3]},
+            { name: "Xi Huang", url: "https://xi-hhhm.github.io/roboX.huang/", affiliations: [1]},
             { name: "Yongzhou Zhang", affiliations: [2] },
             { name: "Tao Chen", affiliations: [2] },
             { name: "Ilshat Mamaev", url: "https://scholar.google.com/citations?user=MrbPxXEAAAAJ&hl=en", affiliations: [2, 3] },
