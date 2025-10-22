@@ -2,6 +2,8 @@ import React from "react";
 import { styled } from '@pigment-css/react';
 
 function ProjectHeader({ title, authors, affiliations, publishedAt }) {
+  const hasEqualContribution = authors.some(author => author.equal);
+
   return (
     <>
       <NameHeader>
@@ -48,6 +50,13 @@ const Authors = styled.p`
   padding-top: 1rem;
   font-weight: 300;
   font-size: 1.rem;
+`;
+
+const EqualContributionNote = styled.p`
+  font-size: 0.875rem;
+  color: #666;
+  text-align: center;
+  margin-top: 0.5rem;
 `;
 
 const AffiliationList = styled.div`
