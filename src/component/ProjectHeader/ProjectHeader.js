@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from '@pigment-css/react';
 
-function ProjectHeader({ title, authors, affiliation, publishedAt }) {
+function ProjectHeader({ title, authors, affiliations, publishedAt }) {
   return (
     <>
       <NameHeader>
