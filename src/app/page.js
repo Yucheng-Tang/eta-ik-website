@@ -28,7 +28,7 @@ export default function Home() {
           }
           publishedAt="Under review for IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2025)"
         /> */}
-        <ProjectHeader
+        {/* <ProjectHeader */}
           title="ETA-IK: Execution-Time-Aware Inverse Kinematics for Dual-Arm Systems"
           authors={[
             { name: "Yucheng Tang", url: "https://yucheng-tang.github.io", affiliations: [1, 2, 3]},
