@@ -25,7 +25,7 @@ jobs:
       # Your Dockerfile should run "npm run build" followed by "npm run export"
       # so that the static site is generated in the /app/out folder.
       - name: Build Docker image
-        run: docker build -t nextjs-site .
+        run: docker build -t nextjs-site --build-arg NEXT_PUBLIC_BASE_URL=/eta-ik-website .
 
       - name: Create container from image
         run: docker create --name extract nextjs-site
