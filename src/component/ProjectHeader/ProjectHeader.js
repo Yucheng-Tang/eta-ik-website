@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from '@pigment-css/react';
 
 function ProjectHeader({ title, authors, affiliations, publishedAt }) {
-  const hasEqualContribution = authors.some(author => author.equal);
+  const hasEqualContribution = Array.isArray(authors) && authors.some(author => author.equal);
 
   return (
     <>
